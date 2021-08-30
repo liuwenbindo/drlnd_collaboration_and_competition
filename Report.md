@@ -55,18 +55,26 @@ The agent was able to solve the environment by achieving average score of +0.5 o
 ### 4. Training Output
 
 ```
-Episode 100	Average Score: 5.59
-Episode 200	Average Score: 23.48
-Episode 300	Average Score: 26.13
-Episode 400	Average Score: 26.28
-Episode 500	Average Score: 28.15
-Episode 600	Average Score: 24.98
-Episode 700	Average Score: 26.39
-Episode 800	Average Score: 27.78
-Episode 900	Average Score: 28.27
-Episode 1000	Average Score: 28.86
-Episode 1023	Average Score: 30.01
-Environment solved in 1023 episodes!	Average Score: 30.01
+Episode 100	Average Score: 0.01
+Episode 200	Average Score: 0.01
+Episode 300	Average Score: 0.00
+Episode 400	Average Score: 0.04
+Episode 500	Average Score: 0.02
+Episode 600	Average Score: 0.22
+Episode 700	Average Score: 0.22
+Episode 800	Average Score: 1.26
+Episode 900	Average Score: 0.37
+Episode 1000	Average Score: 0.19
+Episode 1100	Average Score: 0.77
+Episode 1200	Average Score: 0.78
+Episode 1300	Average Score: 0.99
+Episode 1400	Average Score: 0.85
+Episode 1500	Average Score: 0.91
+Episode 1600	Average Score: 0.97
+Episode 1700	Average Score: 1.15
+Episode 1800	Average Score: 1.18
+Episode 1900	Average Score: 0.74
+Episode 2000	Average Score: 0.74
 ```
 
 ### 5. Future Improvements
