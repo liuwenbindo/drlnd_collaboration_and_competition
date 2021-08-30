@@ -74,4 +74,4 @@ The amount of experimentation that could be performed was somewhat limited by th
 
  - Introduce a decay to the noise added to the action to improve stability.
  - Use a priority algorithm for sampling from the replay buffer instead of uniformly sampling
- - Use alternative learning algorithms like PPO with team spirit and the multi-agent DDPG algorithm described ![here](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf) that uses centralised training and decentralised execution. 
+ - Use alternative learning algorithms like PPO with team spirit and the multi-agent DDPG algorithm described ![here](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf) that uses centralised training and decentralised execution.
