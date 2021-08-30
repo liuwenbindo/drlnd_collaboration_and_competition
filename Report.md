@@ -47,11 +47,12 @@ WEIGHT_DECAY = 0        # L2 weight decay
 ```
 Also, to improve the exploration of the training, the predicted actions were corrupted with noise based on an Ornstein-Uhlenbeck process with mean `mu = 0`, mean reversion rate `theta = 0.15` and variance `sigma = 0.1`.
 
-### 4. Training Scores
-The agent was able to solve the environment by achieving score of 30.0 over 100 consecutive episodes after 1023 episodes.
+### 3. Training Scores
+
+The agent was able to solve the environment by achieving average score of +0.5 over 100 consecutive episodes after about 1100 episodes. We didn't stop training after the environment was solved to observe how the performance can change with longer training time. It turns out we observe best performance in the period of episode 1100 to 1800, then the average score started to decrease slowly, this may due to the unstable nature of multi-agent learning algorithm.
 ![ ](training_scores.png)
 
-### 5. Training Output
+### 4. Training Output
 
 ```
 Episode 100	Average Score: 5.59
@@ -68,9 +69,9 @@ Episode 1023	Average Score: 30.01
 Environment solved in 1023 episodes!	Average Score: 30.01
 ```
 
-### 6. Future Improvements
+### 5. Future Improvements
 The amount of experimentation that could be performed was somewhat limited by the amount of time is required to perform training; so an obvious first point is further experimentation on the network architecture to find a more optimum actor and critic architecture. Some other thoughts include:
 
  - Introduce a decay to the noise added to the action to improve stability.
  - Use a priority algorithm for sampling from the replay buffer instead of uniformly sampling
- - Use recurrent networks to capture temporal details of the environment.
+ - Use alternative learning algorithms like PPO with team spirit and the multi-agent DDPG algorithm described ![here](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf) that uses centralised training and decentralised execution. 
